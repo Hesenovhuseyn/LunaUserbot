@@ -160,7 +160,7 @@ try:
 
     # PLUGIN MESAJLARI AYARLIYORUZ
     PLUGIN_MESAJLAR = {}
-    ORJ_PLUGIN_MESAJLAR = {"alive": "⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝ 𝓐𝓴𝓽𝓲𝓿𝓭𝓲𝓻...", 
+    ORJ_PLUGIN_MESAJLAR = {"alive": "⚝ 𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕 ⚝ 𝓐𝓴𝓽𝓲𝓿𝓭𝓲𝓻...", 
                            "afk": f"{str(choice(AFKSTR))}", 
                            "kickme": "Bye-bye mən qrupdan çıxdım 🥰", 
                            "pm": UNAPPROVED_MSG, 
@@ -170,7 +170,7 @@ try:
                            "approve": "{mention}, mənə mesaj göndərə bilərsən!", 
                            "disapprove": "{mention}, artıq mənə mesaj göndərə bilmərsən!", 
                            "block": "{mention}, bloklandın!", 
-                           "restart": "⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝💻 𝚢𝚎𝚗𝚒𝚍ə𝚗 𝚋𝚊ş𝚕𝚊𝚍ı𝚕ı𝚛. . ."}
+                           "restart": "⚝ 𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕 ⚝💻 𝚢𝚎𝚗𝚒𝚍ə𝚗 𝚋𝚊ş𝚕𝚊𝚍ı𝚕ı𝚛. . ."}
 
     PLUGIN_MESAJLAR_TURLER = ["alive", "afk", "kickme", "pm", "dızcı", "ban", "mute", "approve", "disapprove", "block", "restart"]
     for mesaj in PLUGIN_MESAJLAR_TURLER:
@@ -265,7 +265,7 @@ for module_name in ALL_MODULES:
 
 LOGS.info("Botunuz işleyir! Her hansi bir söhbete .alive yazaraq Test edin."
           " Yardıma ehtiyacınız varsa, Destek qrupumuza buyurun t.me/silgiub")
-LOGS.info(f"Bot versiyası:⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝ {SILGI_VERSION}")
+LOGS.info(f"Bot versiyası:⚝ 𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕 ⚝ {SILGI_VERSION}")
 
 """
 if len(argv) not in (1, 3, 4):
