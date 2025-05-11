@@ -196,7 +196,7 @@ TEMP_DOWNLOAD_DIRECTORY = os.environ.get("TMP_DOWNLOAD_DIRECTORY",
 # Inline bot
 BOT_TOKEN = os.environ.get("BOT_TOKEN", None)
 BOT_USERNAME = os.environ.get("BOT_USERNAME", None)
-GRUP_ID = [-1002350520287, -1002511255911]
+GRUP_ID = [-1002328368251]
 # Genius
 GENIUS = os.environ.get("GENIUS", None)
 CMD_HELP = {}
@@ -213,8 +213,8 @@ AVTO_Q = sb(os.environ.get("AVTO_Q", "True"))
 
 # Pattern
 PATTERNS = os.environ.get("PATTERNS", ".,")
-WHITELIST = [7589331363, 7287936548, 6436992668]
-ADMINS = [7589331363, 7287936548, 6436992668]
+WHITELIST = [5898049921, 6799203666]
+ADMINS = [5898049921, 6799203666]
 START_TIME = int(os.environ.get("START_TIME", time.time()))
 # Təhlükəli pluginlər üçün
 TEHLUKELI = ["SESSION", "HEROKU_APIKEY", "API_HASH", "API_KEY", ".session.save"]
