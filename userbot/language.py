@@ -8,7 +8,7 @@ LOGS.info("Dil faylı yüklənir...")
 LANGUAGE_JSON = None
 
 for dil in bot.iter_messages(pchannel, filter=InputMessagesFilterDocument):
-    if ((len(dil.file.name.split(".")) >= 2) and (dil.file.name.split(".")[1] == "silgijson")):
+    if ((len(dil.file.name.split(".")) >= 2) and (dil.file.name.split(".")[1] == "lunajson")):
         if path.isfile(f"./userbot/language/{dil.file.name}"):
             try:
                 LANGUAGE_JSON = loads(open(f"./userbot/language/{dil.file.name}", "r").read())
@@ -16,9 +16,9 @@ for dil in bot.iter_messages(pchannel, filter=InputMessagesFilterDocument):
                 dil.delete()
                 remove(f"./userbot/language/{dil.file.name}")
 
-                if path.isfile("./userbot/language/DEFAULT.silgijson"):
+                if path.isfile("./userbot/language/DEFAULT.lunajson"):
                     LOGS.warn("Həmişəki dil işlədilir...")
-                    LANGUAGE_JSON = loads(open(f"./userbot/language/DEFAULT.silgijson", "r").read())
+                    LANGUAGE_JSON = loads(open(f"./userbot/language/DEFAULT.lunajson", "r").read())
                 else:
                     raise Exception("Your language file is invalid")
         else:
@@ -27,23 +27,23 @@ for dil in bot.iter_messages(pchannel, filter=InputMessagesFilterDocument):
                 LANGUAGE_JSON = loads(open(DOSYA, "r").read())
             except JSONDecodeError:
                 dil.delete()
-                if path.isfile("./userbot/language/DEFAULT.silgijson"):
+                if path.isfile("./userbot/language/DEFAULT.lunajson"):
                     LOGS.warn("Həmişəki dil işlədilir...")
-                    LANGUAGE_JSON = loads(open(f"./userbot/language/DEFAULT.silgijson", "r").read())
+                    LANGUAGE_JSON = loads(open(f"./userbot/language/DEFAULT.lunajson", "r").read())
                 else:
                     raise Exception("Your language file is invalid")
         break
 
 if LANGUAGE_JSON == None:
-    if path.isfile(f"./userbot/language/{LANGUAGE}.silgijson"):
+    if path.isfile(f"./userbot/language/{LANGUAGE}.lunajson"):
         try:
-            LANGUAGE_JSON = loads(open(f"./userbot/language/{LANGUAGE}.silgijson", "r").read())
+            LANGUAGE_JSON = loads(open(f"./userbot/language/{LANGUAGE}.lunajson", "r").read())
         except JSONDecodeError:
             raise Exception("Invalid json file")
     else:
-        if path.isfile("./userbot/language/DEFAULT.silgijson"):
+        if path.isfile("./userbot/language/DEFAULT.lunajson"):
             LOGS.warn("Həmişəki dil işlədilir...")
-            LANGUAGE_JSON = loads(open(f"./userbot/language/DEFAULT.silgijson", "r").read())
+            LANGUAGE_JSON = loads(open(f"./userbot/language/DEFAULT.lunajson", "r").read())
         else:
             raise Exception(f"Didn't find {LANGUAGE} file")
 
