@@ -8,11 +8,11 @@ from userbot.events import register
 # ██████ LANGUAGE CONSTANTS ██████ #
 
 from userbot.language import get_value
-LANG = get_value("__silgi")
+LANG = get_value("__luna")
 
 # ████████████████████████████████ #
 
-@register(outgoing=True, pattern="^.silgi(?: |$)(.*)")
+@register(outgoing=True, pattern="^.luna(?: |$)(.*)")
 async def dto(event):
     args = event.pattern_match.group(1).lower()
     if args:
