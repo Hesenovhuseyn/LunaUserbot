@@ -2,7 +2,7 @@
     "__SILGIJSON__": true,
     "LANGUAGE": "Azərbaycanca",
     "LANGCODE": "az",
-    "AUTHOR": "@hvseyn",
+    "AUTHOR": "@HuseynH",
     "STRINGS": {
         "__plugin": {
             "REPLY_FOR_PORT": "`Zəhmət olmasa Plugin-Port üçün bir fayla cavab yazın`",
@@ -30,11 +30,11 @@
             "ALREADY_DELETED": "`Plugin faylı artıq silinib.`",
             "NOT_FOUND_PLUGIN": "`Belə bir plugin bəlkə var idi, bəlkədə yox. Ancaq hazırda olmadığı dəqiqdir.`",
             "PLUG_DELETED": "`Plugin uğurla silindi!` **Yenidən başladılır.**",
-            "DTO_PLUGIN_CAPTION": "`Bu` [⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝](https://t.me/silgiub) `pluginidir.`"
+            "DTO_PLUGIN_CAPTION": "`Bu` [❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️](https://t.me/LunaDestek) `pluginidir.`"
         },
         
         "__silgi": {
-            "NEED_PLUGIN": "**❗️Zəhmət olmasa düzgün bir** `⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝` **modulu qeyd edin.**\n**ℹ️ Hansısa plugin haqqında məlumat lazımdırsa, əvvəlcə plugini yüklədiyinizdən əmin olun.**",
+            "NEED_PLUGIN": "**❗️Zəhmət olmasa düzgün bir** `❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️` **modulu qeyd edin.**\n**ℹ️ Hansısa plugin haqqında məlumat lazımdırsa, əvvəlcə plugini yüklədiyinizdən əmin olun.**",
             "NEED_MODULE": "`Modullar aşağıdadır ⬇️ \nİstifadəsi: .silgi <modul adı>`"
         },
 
@@ -82,7 +82,7 @@
             "INVALID_MEDIA": "```Media etibarlı deyil.```",
             "PRIVATE": "`Bu əmr xüsusi mesajda istifadə edilə bilməz!`",
             "EKLE": "`Uğurla əlavə edildi`",
-            "BRAIN": "`Xəta! Bunu` **⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝** `Səlahiyyətli birinə edə bilmərəm.`",
+            "BRAIN": "`Xəta! Bunu` **❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️** `Səlahiyyətli birinə edə bilmərəm.`",
             "BANNING": "`İstifadəçi qara siyahıya əlavə edilir...`",
             "ALREADY_GBANNED": "`Xəta! İstifadəçi artıq dünya miqyasında qadağan edilmişdir.`",
             "GBANNED_REASON": "`İstifadəçi dünya miqyasında qadağan edildi!`\n**Səbəbi:**",
@@ -479,19 +479,19 @@
             "GOODMORNIN_YALL": "`Sabahınız xeyir!`",
             "GOODBYE_MFRS": "`Görüşənədək... *Windows XP söndürlmə səsi*`",
             "RESTARTING": "`Bot yenidən qoşulur..`",
-            "SUPPORT_GROUP": "[Buradan](http://t.me/silgiub) Dəstək qrupumuza çata bilərsiniz.",
-            "CREATOR": "Bu bot \n[SILGI](https://t.me/hvseyn) tərəfindən hazırlanmışdır. \n",
-            "README": "⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝",
-            "REPO": "⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝",
+            "SUPPORT_GROUP": "[Buradan](https://t.me/LunaDestek) Dəstək qrupumuza çata bilərsiniz.",
+            "CREATOR": "Bu bot \n[SILGI](https://t.me/HuseynH) tərəfindən hazırlanmışdır. \n",
+            "README": "❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️",
+            "REPO": "❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️",
             "RD1": "<əşya1> <əşya2>",
             "RD2": "Əşya listindən təsadufi bir əşya seçər",
             "RD3": "random dəftər qələm karandaş",
             "SP1": "<vaxt>",
-            "SP2": "⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝ da bir insandır, o da yorulur. Ara bir biraz yatmağına icazə ver.",
+            "SP2": "❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️ da bir insandır, o da yorulur. Ara bir biraz yatmağına icazə ver.",
             "SP3": "sleep 30",
             "SD": "Nostaljik bir şəkildə botunuzu söndürər.",
-            "RP": "⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝ botunun GitHubdakı reposuna gedən bir link.",
-            "RD": "⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝ botunun GitHubdakı README.md faylına gedən bir link.",
+            "RP": "❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️ botunun GitHubdakı reposuna gedən bir link.",
+            "RD": "❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️ botunun GitHubdakı README.md faylına gedən bir link.",
             "CR": "Bu gözəl botu kimin yaratdığını öyrən :-)",
             "RPT1": "<rəqəm> <mətin>",
             "RPT2": "Bir mətini bəlli bir sayıda təkrar edər. Spam əmri ilə qarışdırmayın.",
@@ -779,10 +779,10 @@
             "RESULT": "Nəticə",
             "NOT_FOUND": "Heçnə tapılmadı",
             "SS1": "Neofetch modulunu işlədərək sistem məlumatlarını göstərər.",
-            "SS2": "⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝ versiyasını göstərər.",
+            "SS2": "❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️ versiyasını göstərər.",
             "SS3": "<modul(lar)>",
             "SS4": "Pip modullarında axtarış edər.",
-            "SS5": "⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝ botunun işləyib işləmədiyini yoxlamaq üçün işlədilir.",
+            "SS5": "❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️ botunun işləyib işləmədiyini yoxlamaq üçün işlədilir.",
             "EXAMPLE": "`Bir nümunə görmək üçün .dto pip əmrindən istifadə edin.`"
         },
 
@@ -808,7 +808,7 @@
             "NOT_FOUND": "qovluğu tapa bilmədi",
             "GIT_ERROR": "Git xətası!",
             "NOT_GIT": "qovluğlu bir git reposu kimi görünmür. \nAncaq botu .update now əmri ilə zorla yeniləməklə bu problemi həll edə bilərsiniz.",
-            "INVALID_BRANCH": "**[Yenilənmə]:**` Düşünürəm ki, ⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝ botunuzu dəyişdirdiniz və öz filialınızdan istifadə edirsiniz.\nBu vəziyyət yenilənməni edənin başını qarışdırır,\nGüncəllənmə haradan çəkiləcək?\nXahiş edirəm rəsmi repodan DTÖUserBotunu istifadə edin.`",
+            "INVALID_BRANCH": "**[Yenilənmə]:**` Düşünürəm ki, ❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️ botunuzu dəyişdirdiniz və öz filialınızdan istifadə edirsiniz.\nBu vəziyyət yenilənməni edənin başını qarışdırır,\nGüncəllənmə haradan çəkiləcək?\nXahiş edirəm rəsmi repodan DTÖUserBotunu istifadə edin.`",
             "UPDATE": "\n`Botun` **Ən güncəl versiyadadır!** `Branch:` **{}**\n",
             "WAS_UPDATE": "**{} üçün yeni güncəlləmə mövcuddur!\n\nDəyişikliklər:**\n`{}`",
             "BIG": "`Dəyişikliklərin siyahısı çox böyükdür, ona bir fayl kimi baxmalısınız.`",
@@ -817,7 +817,7 @@
             "UPDATING": "`Bot yenilənir...`",
             "INVALID_APPNAME": "`[Yenilənmə] Güncəlləmədən istifadə etmək üçün HEROKU_APPNAME dəyişənini təyin etməlisiniz.`",
             "INVALID_HEROKU": "{}\n`Heroku dəyişənləri səhv və ya müəyyənləşdirilmişdir.`",
-            "HEROKU_UPDATING": "`[Yenilənmə]\n⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝ UserBotunun daha yaxşı olacağına əmin ola bilərsiniz :) Bu müddət maksimum 10 dəqiqə çəkir.`",
+            "HEROKU_UPDATING": "`[Yenilənmə]\n❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️ UserBotunun daha yaxşı olacağına əmin ola bilərsiniz :) Bu müddət maksimum 10 dəqiqə çəkir.`",
             "ERRORS": "Qarşılaşdığımız səhflər bunlardır",
             "UPDATE1": "Botunuza siz quraşdırandan sonra hər hansı bir yenilənmə gəlib gəlmədiyini yoxlayar.",
             "UPDATE2": "Botunuzu yeniləyər.",
@@ -908,7 +908,7 @@
             "ISP": "İnternet xidməti təminatçısı: "
         },
         "userbot": {
-            "SILGI": "`⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝ admininə/sahibinə bunu edən bilmərəm.`"
+            "SILGI": "`❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️ admininə/sahibinə bunu edən bilmərəm.`"
         }
 
     }
