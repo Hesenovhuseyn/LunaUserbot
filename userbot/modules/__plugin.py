@@ -181,7 +181,7 @@ async def pinstall(event):
             if re.search(r'CmdHelp\(.*\)', dosy):
                 cmdhelp = re.findall(r"CmdHelp\([\"'](.*)[\"']\)", dosy)[0]
                 await plugin.forward_to(PLUGIN_CHANNEL_ID)
-                return await event.edit(f'__📥 Plugin uğurla yükləndi!__\n`ℹ️ Daha ətraflı məlumat almaq üçün` **.silgi {cmdhelp}** `yazın.`')
+                return await event.edit(f'__📥 Plugin uğurla yükləndi!__\n`ℹ️ Daha ətraflı məlumat almaq üçün` **.luna {cmdhelp}** `yazın.`')
             else:
                 await plugin.forward_to(PLUGIN_CHANNEL_ID)
                 userbot.cmdhelp.CmdHelp(fayl).add_warning('Əmrlər tapılmadı!').add()
@@ -190,12 +190,12 @@ async def pinstall(event):
             if re.search(r'CmdHelp\(.*\)', dosy):
                 cmdhelp = re.findall(r"CmdHelp\([\"'](.*)[\"']\)", dosy)[0]
                 await plugin.forward_to(PLUGIN_CHANNEL_ID)
-                return await event.edit(f'__📥 Plugin uğurla yükləndi!__\n`ℹ️ Daha ətraflı məlumat almaq üçün` **.silgi {cmdhelp}** `yazın.`')
+                return await event.edit(f'__📥 Plugin uğurla yükləndi!__\n`ℹ️ Daha ətraflı məlumat almaq üçün` **.luna {cmdhelp}** `yazın.`')
             else:
                 dosyaAdi = plugin.file.name.replace('.py', '')
                 extractCommands(fayl)
                 await plugin.forward_to(PLUGIN_CHANNEL_ID)
-                return await event.edit(f'__📥 Plugin uğurla yükləndi!__\n`ℹ️ Daha ətraflı məlumat almaq üçün` **.silgi {dosyaAdi}** `yazın.`')
+                return await event.edit(f'__📥 Plugin uğurla yükləndi!__\n`ℹ️ Daha ətraflı məlumat almaq üçün` **.luna {dosyaAdi}** `yazın.`')
 
 @register(outgoing=True, pattern="^.premove ?(.*)")
 async def premove(event):
