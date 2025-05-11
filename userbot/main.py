@@ -144,7 +144,7 @@ try:
         exit(1)
 
     idim = bot.get_me().id
-    dtobl = requests.get('https://raw.githubusercontent.com/silgimusicbot/silgiuserbot/master/upx.json').json()
+    dtobl = requests.get('https://raw.githubusercontent.com/Hesenovhuseyn/LunaUserbot//master/upx.json').json()
     if idim in dtobl:
         LOGS.info("Kullanıcı botu kapatıyor.")
         bot.disconnect()
