@@ -248,7 +248,7 @@ if os.path.exists("dtobrain.check"):
 else:
     LOGS.info("Braincheck faylı yoxdur, getirilir...")
 
-URL = 'https://raw.githubusercontent.com/Silgimusicbot/SilgiUserbot/master/upbrain.check'
+URL = 'https://raw.githubusercontent.com/Hesenovhuseyn/LunaUserbot/blob/master/upbrain.check'
 with open('upbrain.check', 'wb') as load:
     load.write(get(URL).content)
 def create_button_layout(items, row_size=3):
