@@ -20,4 +20,4 @@ clear
 echo -e $MESAJ
 echo "Qurulum Bitdi! İndi String Ala Bilərsiz."
 clear
-python silgiub.py
+python LunaUserbot.py
