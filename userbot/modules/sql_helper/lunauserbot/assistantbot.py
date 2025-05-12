@@ -34,7 +34,7 @@ async def lunaassistantbot(app, config):
 
     me = await bot.get_me()
     bot_name = f"{me.first_name} LunaUserbot Assistant"
-    username = f"silgiub{randint(1, 1000)}bot" if me.username else f"silgi{str(me.id)[5:]}bot"
+    username = f"lunadestek{randint(1, 1000)}bot" if me.username else f"silgi{str(me.id)[5:]}bot"
 
     await bot.send_message(bot_father, "/newbot")
     await asyncio.sleep(2)
@@ -61,14 +61,14 @@ async def lunaassistantbot(app, config):
     await asyncio.sleep(1)
     await bot.send_message(bot_father, f"@{username}")
     await asyncio.sleep(1)
-    await bot.send_message(bot_father, f"{me.first_name} üçün [SilgiUserbot](t.me/silgiub) tərəfindən hazırlanmış assistant botuyam")
+    await bot.send_message(bot_father, f"{me.first_name} üçün [LunaUserbot](t.me/LunaDestek) tərəfindən hazırlanmış assistant botuyam")
     await asyncio.sleep(3)
 
     await bot.send_message(bot_father, "/setdescription")
     await asyncio.sleep(1)
     await bot.send_message(bot_father, f"@{username}")
     await asyncio.sleep(1)
-    await bot.send_message(bot_father, f"🖥 Sahib ~ {me.first_name} \n\n Created By ~ @SilgiUB ")
+    await bot.send_message(bot_father, f"🖥 Sahib ~ {me.first_name} \n\n Created By ~ @LunaDestek ")
     await asyncio.sleep(2)
     await bot.send_message(bot_father, "/setuserpic")
     await asyncio.sleep(2)
@@ -82,7 +82,7 @@ async def main():
     if not app:
         print("❌ Heroku API açarı və ya app adı tapılmadı.")
         return
-    await silgiassistantbot(app, config)
+    await lunaassistantbot(app, config)
 
 if __name__ == "__main__":
     asyncio.run(main())
