@@ -3,7 +3,7 @@ import requests
 import aiohttp
 import aiofiles
 from userbot.events import register
-from userbot import SILGI_VERSION
+from userbot import LUNA_VERSION
 from userbot.cmdhelp import CmdHelp
 from bs4 import BeautifulSoup
 
@@ -70,7 +70,7 @@ async def effect_yazi(event):
             await event.client.send_file(
                 event.chat_id,
                 file_name,
-                caption=f"✅ **{effect}** efekti ilə yazı hazırdır!\n📌 **Mətn:** `{yazi}`\n⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝",
+                caption=f"✅ **{effect}** efekti ilə yazı hazırdır!\n📌 **Mətn:** `{yazi}`\n❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️",
                 reply_to=event.reply_to_msg_id
             )
             await event.delete()
@@ -136,7 +136,7 @@ async def effect_duman(event):
             await event.client.send_file(
                 event.chat_id,
                 file_name,
-                caption=f"✅ **Duman** efekti ilə yazı hazırdır!\n📌 **Mətn:** `{text}`\n⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝",
+                caption=f"✅ **Duman** efekti ilə yazı hazırdır!\n📌 **Mətn:** `{text}`\n❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️",
                 reply_to=event.reply_to_msg_id
             )
             await event.delete()
