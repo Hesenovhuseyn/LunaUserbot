@@ -1,4 +1,4 @@
-# ⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝ Əkmə OĞLUMMM
+# ❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️ Əkmə OĞLUMMM
 from telethon import events
 from userbot import bot, GRUP_ID
 from userbot.modules.sql_helper import chatbot_sql as db
@@ -45,5 +45,5 @@ async def chatbot_aktiv(event):
 CmdHelp('chatbot').add_command(
     'chatbot', '<on/off>', 'Yazdığınız gruplarda ChatBot özəlliyini aktivləşdirər'
 ).add_info(
-    '⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝ Məhsuludur'
+    '❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️ Məhsuludur'
 ).add()
