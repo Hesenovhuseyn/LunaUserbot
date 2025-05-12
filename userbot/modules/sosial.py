@@ -42,7 +42,7 @@ async def tiktok(event):
             await event.client.send_file(
                 event.chat_id,
                 response.message.media,
-                caption=f"[⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝](@silgiub)",
+                caption=f"[❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️](@lunadestek)",
             )
             await event.client.send_read_acknowledge(conv.chat_id)
             await bot(functions.messages.DeleteHistoryRequest(peer=chat, max_id=0))
@@ -73,7 +73,7 @@ async def _(event):
         except YouBlockedUserError:
             await event.edit(f"{chat}'u blokdan çıxarın")
             return
-        await event.client.send_file(event.chat_id, video, caption=f"{details.text} \n\n@UseratorOT `ilə yükləndi`")
+        await event.client.send_file(event.chat_id, video, caption=f"{details.text} \n\n@LunaUserBot `ilə yükləndi`")
         await event.client.delete_messages(conv.chat_id,
                                            [msg_start.id, r.id, msg.id, details.id, video.id])
         await event.delete()
