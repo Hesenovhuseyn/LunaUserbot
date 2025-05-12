@@ -66,7 +66,7 @@ if not LANGUAGE in ["EN", "TR", "AZ", "UZ", "DEFAULT"]:
     LOGS.info("Bilinməyən bir dil seçdiniz. Buna görə DEFAULT işlədilir.")
     LANGUAGE = "DEFAULT"
     
-# SilgiUserbot Versiyası
+# LunaUserbot Versiyası
 SILGI_VERSION = "x7.6.2"
 
 # Telegram API KEY ve HASH
@@ -118,7 +118,7 @@ AUTO_PP = os.environ.get("AUTO_PP", None)
 # Alive Name
 ALIVE_NAME = os.environ.get("ALIVE_NAME", None)
 DEFAULT_NAME = os.environ.get("DEFAULT_NAME", None)
-BREND_MENTION = f"SilgiUserbot"
+BREND_MENTION = f"LunaUserbot"
 BREND_VERSION = "4.5"
 DTO_VERSION = "4.5"
 # Warn modül
@@ -169,7 +169,7 @@ TZ_NUMBER = int(os.environ.get("TZ_NUMBER", 1))
 CLEAN_WELCOME = sb(os.environ.get("CLEAN_WELCOME", "True"))
 
 # Last.fm
-BIO_PREFIX = os.environ.get("BIO_PREFIX", "@silgiuserbot | ")
+BIO_PREFIX = os.environ.get("BIO_PREFIX", "@LunaUserbot | ")
 DEFAULT_BIO = os.environ.get("DEFAULT_BIO", None)
 DEV = [7589331363, 6436992668]
 LASTFM_API = os.environ.get("LASTFM_API", None)
