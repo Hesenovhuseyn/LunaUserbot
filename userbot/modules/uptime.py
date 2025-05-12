@@ -1,7 +1,10 @@
 import time
 from userbot.events import register
 from userbot import START_TIME
-from userbot import SILGI_USER
+from userbot import LUNA_USER
+
+
+
 @register(outgoing=True, pattern="^.uptime$")
 async def isleme_muddeti(silgi):
     indi = time.time()
@@ -18,4 +21,4 @@ async def isleme_muddeti(silgi):
     if deqiqe > 0 or saat > 0 or gun > 0:
         vaxt += f"{deqiqe} dəqiqə, "
     vaxt += f"{saniye} saniyə"
-    await silgi.edit(f"**Sahibim: {SILGI_USER}\nSilgiUserbot'un işləmə müddəti:**\n `{vaxt}`")
+    await silgi.edit(f"**Sahibim: {LUNA_USER}\nSilgiUserbot'un işləmə müddəti:**\n `{vaxt}`")

@@ -4,7 +4,7 @@ from platform import uname
 from shutil import which
 from os import remove
 from userbot import LUNA_VERSION
-from userbot import SILGI_USER, CMD_HELP
+from userbot import LUNA_USER, CMD_HELP
 from telethon.tl.patched import Message
 from userbot.events import register
 from userbot.main import PLUGIN_MESAJLAR
@@ -129,7 +129,7 @@ async def malive(event):
         f"┣• {LANG['OK']}\n"
         "╰━━━━━━━━━━━━━━━━━━━\n\n"
         f"╭━━━➤ 『 {LANG['INFO']} 』\n"
-        f"┣• 👤 {LANG['NAME']}: {SILGI_USER}\n"
+        f"┣• 👤 {LANG['NAME']}: {LUNA_USER}\n"
         f"┣• ⚙️ {LANG['PYTHON']}: `{python_version()}`\n"
         f"┣• 🛠️ {LANG['VERSION']}: `{LUNA_VERSION}`\n"
         f"┣• 📚 {LANG['PLUGIN_COUNT']}: `{len(CMD_HELP)}`\n"

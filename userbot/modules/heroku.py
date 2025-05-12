@@ -248,7 +248,7 @@ async def dyno_usage(dyno):
 
     await asyncio.sleep(1.5)
 
-    return await dyno.reply("⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝\n"
+    return await dyno.reply("❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️\n"
     "**⬇️ Dyno istifadəsi**:\n\n"
                            f"⏳ `İstifadə etdiyi dyno saatı`\n**👤 App adı - ****({HEROKU_APPNAME})**:\n"
                            f"     •  `{AppHours}` **saat**  `{AppMinutes}` **dəqiqə**  "
@@ -323,7 +323,7 @@ async def dyno_usage(dyno):
 
 
 
-silgi = "userbot/SilgiUserbotlogo.jpg"
+silgi = "userbot/LunaUserbot.jpg"
 @register(outgoing=True, pattern=r"^\.loq$")
 async def get_heroku_logs(dyno):
     try:

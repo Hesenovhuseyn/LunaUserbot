@@ -46,7 +46,7 @@ async def upstream(ups):
     ".update əmri ilə botunun yenk versiyada olub olmadığını yoxlaya bilərsiz."
     mesaj = await ups.reply(LANG['DETECTING'])
     conf = ups.pattern_match.group(1)
-    silgi_repo = UPSTREAM_REPO_URL
+    luna_repo = UPSTREAM_REPO_URL
     force_update = False
 
     try:
@@ -67,7 +67,7 @@ async def upstream(ups):
             )
             return
         repo = Repo.init()
-        origin = repo.create_remote('upstream', silgi_repo)
+        origin = repo.create_remote('upstream', luna_repo)
         origin.fetch()
         force_update = True
         repo.create_head('master', origin.refs.seden)
@@ -81,7 +81,7 @@ async def upstream(ups):
         return
 
     try:
-        repo.create_remote('upstream', silgi_repo)
+        repo.create_remote('upstream', luna_repo)
     except BaseException:
         pass
 
@@ -110,7 +110,7 @@ async def upstream(ups):
             remove("UPDΔTΣ.txt")
         else:
             await mesaj.edit(changelog_str)
-        await mesaj.respond('`Botunuz ⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝ admini tərəfindən yenilənir`')
+        await mesaj.respond('`Botunuz ❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️ admini tərəfindən yenilənir`')
         return
 
     if force_update:
@@ -172,7 +172,7 @@ async def upstream(ups):
     ".update əmri ilə botunun yenk versiyada olub olmadığını yoxlaya bilərsiz."
     await ups.edit(LANG['DETECTING'])
     conf = ups.pattern_match.group(1)
-    silgi_repo = UPSTREAM_REPO_URL
+    luna_repo = UPSTREAM_REPO_URL
     force_update = False
 
     try:
@@ -193,7 +193,7 @@ async def upstream(ups):
             )
             return
         repo = Repo.init()
-        origin = repo.create_remote('upstream', silgi_repo)
+        origin = repo.create_remote('upstream', luna_repo)
         origin.fetch()
         force_update = True
         repo.create_head('master', origin.refs.seden)
@@ -207,7 +207,7 @@ async def upstream(ups):
         return
 
     try:
-        repo.create_remote('upstream', silgi_repo)
+        repo.create_remote('upstream', luna_repo)
     except BaseException:
         pass
 

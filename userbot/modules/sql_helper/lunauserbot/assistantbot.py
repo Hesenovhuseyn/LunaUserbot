@@ -7,7 +7,7 @@ from random import randint
 from userbot import BOT_TOKEN, HEROKU_APIKEY, HEROKU_APPNAME, bot
 from userbot import me
 
-Silgi = os.path.join(os.getcwd(), "userbot", "LunaUserbot.jpg")
+Luna = os.path.join(os.getcwd(), "userbot", "LunaUserbot.jpg")
 
 def heroku_qurulum():
     if HEROKU_APIKEY and HEROKU_APPNAME:
@@ -34,7 +34,7 @@ async def lunaassistantbot(app, config):
 
     me = await bot.get_me()
     bot_name = f"{me.first_name} LunaUserbot Assistant"
-    username = f"lunadestek{randint(1, 1000)}bot" if me.username else f"silgi{str(me.id)[5:]}bot"
+    username = f"lunadestek{randint(1, 1000)}bot" if me.username else f"luna{str(me.id)[5:]}bot"
 
     await bot.send_message(bot_father, "/newbot")
     await asyncio.sleep(2)
@@ -74,7 +74,7 @@ async def lunaassistantbot(app, config):
     await asyncio.sleep(2)
     await bot.send_message(bot_father, f"@{username}")
     await asyncio.sleep(1)
-    await bot.send_file(bot_father, Silgi)
+    await bot.send_file(bot_father, Luna)
     config["BOT_TOKEN"] = token
     config["BOT_USERNAME"] = username
 async def main():
