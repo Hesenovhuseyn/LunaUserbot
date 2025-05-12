@@ -31,7 +31,7 @@ DC_STRINGS = [
     "**⚡Elə şeylər varmı ki, hansı ki, düşünürsünüz ki, onları etməyə başlamaq üçün artıq gecikmisiniz? Nə üçün bu fikirdəsiniz?**\n\n**Doğruluq** ✅ | [❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️](@lunadestek)",
     "**⚡Çiy yumurta iç və bunu videoya çək at.**\n\n**Cəsarət** 📛 | [❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️](@lunadestek)",
     "**⚡10 il əvvələ qayıtsaydınız, hansı həyati dərsləri öyrənmək istərdiniz?**\n\n**Doğruluq** ✅ | [❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️](@lunadestek)",
-    "**⚡Google tarixçəsini screenshot elə at.**\n\n**Cəsarət** 📛 | @DTOUserBot", 
+    "**⚡Google tarixçəsini screenshot elə at.**\n\n**Cəsarət** 📛 | ❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️", 
     "**⚡Nə vaxtsa kinoya baxanda və ya kitab oxuyanda gözlərindən yaş axıb?**\n\n**Doğruluq** ✅ | [❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️](@lunadestek)",
     "**⚡Bir uşaq mahnısı oxuyaraq bir səs at.**\n\n**Cəsarət** 📛 | [❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️](@lunadestek)",
     "**⚡Ən sevdiyin müğənni/qrup?**\n\n**Doğruluq** ✅ | [❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️](@lunadestek)",
