@@ -1,4 +1,4 @@
-# SilgiUserbot məhsuludur əkmə peysərin balası
+# ❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️ məhsuludur əkmə peysərin balası
 from telethon import events
 from userbot import bot
 from g4f.client import Client
@@ -50,5 +50,5 @@ CmdHelp('chatgpt').add_command(
 ).add_command(
     'igpt', 'şəkil', 'Yazdığınız şəkli yaradar'
 ).add_info(
-    '⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝ Məhsuludur'
+    '❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️ Məhsuludur'
 ).add()
