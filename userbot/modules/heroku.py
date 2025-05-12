@@ -308,7 +308,7 @@ async def dyno_usage(dyno):
 
     await asyncio.sleep(1.5)
 
-    return await dyno.edit("⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝\n"
+    return await dyno.edit("❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️\n"
     "**⬇️ Dyno istifadəsi**:\n\n"
                            f"⏳ `İstifadə etdiyi dyno saatı`\n**👤 App adı - ****({HEROKU_APPNAME})**:\n"
                            f"     •  `{AppHours}` **saat**  `{AppMinutes}` **dəqiqə**  "
@@ -339,7 +339,7 @@ async def get_heroku_logs(dyno):
     
     try:
         log_data = app.get_log()
-        log_filename = "⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝ Logs.txt"
+        log_filename = "❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️ Logs.txt"
         with open(log_filename, "w", encoding="utf-8") as log_file:
             log_file.write(log_data)
         await dyno.client.send_file(
