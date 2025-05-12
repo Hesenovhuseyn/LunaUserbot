@@ -1,11 +1,11 @@
-# ⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝ Əkmə OĞLUMMM
+# ❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️ Əkmə OĞLUMMM
 from userbot.events import register
 from userbot.cmdhelp import CmdHelp
 from telethon import events
 import asyncio
 import random
 
-mesaj = f"```Video yükləndi.\n⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝```"
+mesaj = f"```Video yükləndi.\n❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️```"
 YUKLEYICI_BOT = "HK_tiktok_bot"
 
 async def gosterici(event, uzunluq=6):
