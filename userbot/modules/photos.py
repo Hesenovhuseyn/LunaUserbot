@@ -40,7 +40,7 @@ async def asci(event):
             await event.client.send_file(
                 event.chat_id,
                 response.message.media,
-                caption=f"[⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝](@silgiub)",
+                caption=f"[❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️](@lunadestek)",
             )
             await event.client.send_read_acknowledge(conv.chat_id)
 
@@ -81,7 +81,7 @@ async def line(event):
             await event.client.send_file(
                 event.chat_id,
                 response.message.media,
-                caption=f"[⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝](@silgiub)",
+                caption=f"[❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️](@lunadestek)",
             )
             await event.client.send_read_acknowledge(conv.chat_id)
 
@@ -122,7 +122,7 @@ async def colorizer(event):
             await event.client.send_file(
                 event.chat_id,
                 response.message.media,
-                caption=f"[⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝](@silgiub)",
+                caption=f"[❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️](@lunadestek)",
             )
             await event.client.send_read_acknowledge(conv.chat_id)
 
@@ -163,7 +163,7 @@ async def picture(event):
             await event.client.send_file(
                 event.chat_id,
                 response.message.media,
-                caption=f"[⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝](@silgiub)",
+                caption=f"[❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️](@lunadestek)",
             )
             await event.client.send_read_acknowledge(conv.chat_id)
 
