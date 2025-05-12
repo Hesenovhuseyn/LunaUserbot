@@ -8,7 +8,7 @@ import requests
 from telethon.tl.types import InputMessagesFilterDocument
 from telethon.errors.rpcerrorlist import PhoneNumberInvalidError
 from telethon.tl.functions.channels import GetMessagesRequest
-from . import BRAIN_CHECKER, BOT_TOKEN, CMD_HELP, SILGI_VERSION, PATTERNS
+from . import BRAIN_CHECKER, BOT_TOKEN, CMD_HELP, LUNA_VERSION, PATTERNS
 from .modules import ALL_MODULES
 import userbot.modules.sql_helper.mesaj_sql as MSJ_SQL
 import userbot.modules.sql_helper.galeri_sql as GALERI_SQL
@@ -20,7 +20,7 @@ from . import LANGUAGE, LOGS, bot, PLUGIN_CHANNEL_ID
 from json import loads, JSONDecodeError
 import re
 import userbot.cmdhelp
-from userbot.modules.sql_helper.silgiuserbot.assistantbot import silgiassistantbot, heroku_qurulum
+from userbot.modules.sql_helper.lunauserbot.assistantbot import lunaassistantbot, heroku_qurulum
 StartTime = time.time()
 
 DIZCILIK_STR = [
@@ -160,7 +160,7 @@ try:
 
     # PLUGIN MESAJLARI AYARLIYORUZ
     PLUGIN_MESAJLAR = {}
-    ORJ_PLUGIN_MESAJLAR = {"alive": "⚝ 𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕 ⚝ 𝓐𝓴𝓽𝓲𝓿𝓭𝓲𝓻...", 
+    ORJ_PLUGIN_MESAJLAR = {"alive": "❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️ 𝓐𝓴𝓽𝓲𝓿𝓭𝓲𝓻...", 
                            "afk": f"{str(choice(AFKSTR))}", 
                            "kickme": "Bye-bye mən qrupdan çıxdım 🥰", 
                            "pm": UNAPPROVED_MSG, 
@@ -170,7 +170,7 @@ try:
                            "approve": "{mention}, mənə mesaj göndərə bilərsən!", 
                            "disapprove": "{mention}, artıq mənə mesaj göndərə bilmərsən!", 
                            "block": "{mention}, bloklandın!", 
-                           "restart": "⚝ 𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕 ⚝💻 𝚢𝚎𝚗𝚒𝚍ə𝚗 𝚋𝚊ş𝚕𝚊𝚍ı𝚕ı𝚛. . ."}
+                           "restart": "❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️💻 𝚢𝚎𝚗𝚒𝚍ə𝚗 𝚋𝚊ş𝚕𝚊𝚍ı𝚕ı𝚛. . ."}
 
     PLUGIN_MESAJLAR_TURLER = ["alive", "afk", "kickme", "pm", "dızcı", "ban", "mute", "approve", "disapprove", "block", "restart"]
     for mesaj in PLUGIN_MESAJLAR_TURLER:
@@ -265,7 +265,7 @@ for module_name in ALL_MODULES:
 
 LOGS.info("Botunuz işleyir! Her hansi bir söhbete .alive yazaraq Test edin."
           " Yardıma ehtiyacınız varsa, Destek qrupumuza buyurun t.me/silgiub")
-LOGS.info(f"Bot versiyası:⚝ 𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕 ⚝ {SILGI_VERSION}")
+LOGS.info(f"Bot versiyası:❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️ {LUNA_VERSION}")
 
 """
 if len(argv) not in (1, 3, 4):
@@ -279,7 +279,7 @@ app, config = heroku_qurulum()
 if config:
     if "BOT_TOKEN" not in config:
         loop = asyncio.get_event_loop()
-        loop.run_until_complete(silgiassistantbot(app, config))
+        loop.run_until_complete(lunaassistantbot(app, config))
 
 
 bot.run_until_disconnected()

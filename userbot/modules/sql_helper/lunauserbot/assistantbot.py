@@ -7,7 +7,7 @@ from random import randint
 from userbot import BOT_TOKEN, HEROKU_APIKEY, HEROKU_APPNAME, bot
 from userbot import me
 
-Silgi = os.path.join(os.getcwd(), "userbot", "SilgiUserbotlogo.jpg")
+Silgi = os.path.join(os.getcwd(), "userbot", "LunaUserbot.jpg")
 
 def heroku_qurulum():
     if HEROKU_APIKEY and HEROKU_APPNAME:
@@ -28,12 +28,12 @@ async def get_botfather_message():
                 return token
     return None
 
-async def silgiassistantbot(app, config):
+async def lunaassistantbot(app, config):
     bot_father = "@BotFather"
     await bot(UnblockRequest(bot_father))
 
     me = await bot.get_me()
-    bot_name = f"{me.first_name} SilgiUserbot Assistant"
+    bot_name = f"{me.first_name} LunaUserbot Assistant"
     username = f"silgiub{randint(1, 1000)}bot" if me.username else f"silgi{str(me.id)[5:]}bot"
 
     await bot.send_message(bot_father, "/newbot")
