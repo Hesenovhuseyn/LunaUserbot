@@ -44,7 +44,7 @@ async def lyrics_handler(event):
                 if len(lyrics) > 4096:
                     await event.respond(LANG['TOO_LONG'])
                     with open("lyrics.txt", "w", encoding="utf-8") as f:
-                        f.write(f"⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝\n{artist} - {title}\n\n{lyrics}")
+                        f.write(f"❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️\n{artist} - {title}\n\n{lyrics}")
                     await event.client.send_file(
                         event.chat_id,
                         "lyrics.txt",
@@ -52,7 +52,7 @@ async def lyrics_handler(event):
                     )
                     os.remove("lyrics.txt")
                 else:
-                    header = f"⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝\n{artist} - {title}\n\n"
+                    header = f"❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️\n{artist} - {title}\n\n"
                     formatted_lyrics = f"```{lyrics}```"
                     await event.respond(header + formatted_lyrics, parse_mode="Markdown")
 
