@@ -78,16 +78,16 @@ def register(**args):
                 if not disable_errors:
                     date = strftime("%Y-%m-%d %H:%M:%S", localtime() )
 
-                    silgitext = str(check.text)
-                    text = "**✥ ⚝ 𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕 ⚝ ΣRROR ✥**\n\n"
+                    lunatext = str(check.text)
+                    text = "**✥ ❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️ ΣRROR ✥**\n\n"
                     
-                    if len(silgitext)<10:
+                    if len(lunatext)<10:
                         text += LANG['CMD'].format(lunatext=lunatext)
                     text += LANG['ERR']
                     text += LANG['LINK']
                     text += LANG['AB']
                     
-                    ftext = "--------⚝ 𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕 ⚝ ΣRROR--------\n"
+                    ftext = "--------❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️ ΣRROR--------\n"
                     ftext += LANG['DATE'] + date
                     ftext += LANG['ID'] + str(check.chat_id)
                     ftext += LANG['USERID'] + str(check.sender_id)
@@ -97,7 +97,7 @@ def register(**args):
                     ftext += str(format_exc())
                     ftext += LANG['TEXT']
                     ftext += str(sys.exc_info()[1])
-                    ftext += "\n\n--------⚝ 𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕 ⚝ ΣRROR--------"
+                    ftext += "\n\n--------❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️ ΣRROR--------"
 
                     command = "git log --pretty=format:\"%an: %s\" -0"
 
