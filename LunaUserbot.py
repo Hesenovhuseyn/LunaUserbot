@@ -15,7 +15,7 @@ pip install bs4
 clear
 echo -e $MESAJ
 echo "Fayl yazılır..."
-curl "https://raw.githubusercontent.com/Hesenovhuseyn/LunaUserbot/master/LunaUserbot.py" --output "silgiub.py"
+curl "https://raw.githubusercontent.com/Hesenovhuseyn/LunaUserbot/master/LunaUserbot.py" --output "LunaUserbot.py"
 clear
 echo -e $MESAJ
 echo "Qurulum Bitdi! İndi String Ala Bilərsiz."
