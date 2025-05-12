@@ -115,7 +115,7 @@ def register(**args):
                     file = open("ΣRROR.log", "w+")
                     file.write(ftext)
                     file.close()
-                    Silgi = "userbot/LunaUserbot.jpg"
+                    Luna = "userbot/LunaUserbot.jpg"
      
                     if LOGSPAMMER:
                         await check.client.respond("`Bağışlayın, UserBot'um çökdü.\
@@ -123,7 +123,7 @@ def register(**args):
 
                     await check.client.send_file(send_to,
                                                  "ΣRROR.log",
-                                                 thumb=Silgi,
+                                                 thumb=Luna,
                                                  caption=text)
                     remove("error.log")
             else:
