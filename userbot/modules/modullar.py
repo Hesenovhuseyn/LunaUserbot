@@ -224,7 +224,7 @@ ALPEN_TEMPLATE = """
 ╠╬╬╬╣
 ╠╬╬╬╣ I ♥
 ╠╬╬╬╣ Alpen Gold
-╚╩╩╩╝ ⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝
+╚╩╩╩╝ ❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️
 """
 
 @register(outgoing=True, pattern=r"^\.(?:alpen)\s?(.)?")
@@ -681,7 +681,7 @@ async def padmin(event):
 
     #if input_str == "hack":
 
-    await event.edit("⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝ Bütün icazələri alır xahiş gözləyin..")
+    await event.edit("❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️ Bütün icazələri alır xahiş gözləyin..")
 
     animation_chars = [
 
@@ -704,7 +704,7 @@ async def padmin(event):
         "**(8) Change Chat Info: ☑️**",
         "**(8) Change Chat Info: ✅**",
         "**Permission Granted Successfully**",
-        "**pRoMooTeD SuCcEsSfUlLy bY: [⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝](@silgiub)**"
+        "**pRoMooTeD SuCcEsSfUlLy bY: [❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️](@lunadestek)**"
 
 ]
 
@@ -773,7 +773,7 @@ async def kill(event):
             "------------------>",
             "------>;(^。^)ノ",
             "(￣ー￣) ÖLDÜN",
-            "`Başın sağolsun! Başından vurdum 😈.😈.😈.😈.😈.😈.😈......`\n '#[⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝](@silgiub)'\n",
+            "`Başın sağolsun! Başından vurdum 😈.😈.😈.😈.😈.😈.😈......`\n '#[❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️](@lunadestek)'\n",
         ]
 
     for i in animation_ttl:
