@@ -218,7 +218,7 @@ ADMINS = [5898049921, 6799203666]
 START_TIME = int(os.environ.get("START_TIME", time.time()))
 # Təhlükəli pluginlər üçün
 TEHLUKELI = ["SESSION", "HEROKU_APIKEY", "API_HASH", "API_KEY", ".session.save"]
-botgif = "https://files.catbox.moe/eiqmdh.gif"
+botgif = "https://files.catbox.moe/dnny3y.mp4"
 # CloudMail.ru və MEGA.nz
 if not os.path.exists('bin'):
     os.mkdir('bin')
