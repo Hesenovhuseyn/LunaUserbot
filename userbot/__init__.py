@@ -67,7 +67,7 @@ if not LANGUAGE in ["EN", "TR", "AZ", "UZ", "DEFAULT"]:
     LANGUAGE = "DEFAULT"
     
 # LunaUserbot Versiyası
-SILGI_VERSION = "x7.6.2"
+LUNA_VERSION = "x7.6.2"
 
 # Telegram API KEY ve HASH
 API_KEY = os.environ.get("API_KEY", None)
