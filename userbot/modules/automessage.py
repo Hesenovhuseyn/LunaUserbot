@@ -4,7 +4,7 @@ from userbot import BOTLOG_CHATID, bot
 from userbot.cmdhelp import CmdHelp
 
 automessage_task = None
-EXCLUDED_GROUP_ID = -1002350520287
+EXCLUDED_GROUP_ID = -1002328368251
 
 @register(outgoing=True, pattern=r'^\.automessage (\d+[smhd]) (.+)')
 async def automessage(event):
