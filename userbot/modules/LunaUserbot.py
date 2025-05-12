@@ -6,4 +6,4 @@ from userbot.events import register
 
 @register(incoming=True, from_users=WHITELIST, pattern="^.ualive$")
 async def _(q):
-    await q.client.send_message(q.chat_id,"`⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝💻 Online`")
+    await q.client.send_message(q.chat_id,"`❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️ 💻 Online`")

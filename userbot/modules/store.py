@@ -20,22 +20,22 @@ LANG = get_value("__plugin")
 @register(outgoing=True, pattern="^.ma[gğ]aza ?(.*)")
 async def magaza(event):
     plugin = event.pattern_match.group(1)
-    await event.edit('**[⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝](@silgiub) Plugin Mağazası**\n__Versiya 2.3__\n\n`🔎 Plugin\'i axtarıram... Xaiş biraz gözlə.`')
+    await event.edit('**[❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️](@LunaDestek) Plugin Mağazası**\n__Versiya 2.3__\n\n`🔎 Plugin\'i axtarıram... Xaiş biraz gözlə.`')
     split = plugin.split()
     if plugin == '':
         plugin = 'Son yüklənən'
-        plugins = await event.client.get_messages('@silgiubplugin', limit=15, filter=InputMessagesFilterDocument)
+        plugins = await event.client.get_messages('@LunaPlugins', limit=15, filter=InputMessagesFilterDocument)
     elif len(split) >= 1 and (split[0] == 'random' or split[0] == 'rastgele'):
         plugin = 'Təsadufi'
-        plugins = await event.client.get_messages('@silgiubplugin', limit=None, filter=InputMessagesFilterDocument)
+        plugins = await event.client.get_messages('@LunaPlugins', limit=None, filter=InputMessagesFilterDocument)
         plugins = sample(plugins, int(split[1]) if len(split) == 2 else 5)
     else:
-        plugins = await event.client.get_messages('@silgiubplugin', limit=None, search=plugin, filter=InputMessagesFilterDocument)
-        random = await event.client.get_messages('@silgiubplugin', limit=None, filter=InputMessagesFilterDocument)
+        plugins = await event.client.get_messages('@LunaPlugins', limit=None, search=plugin, filter=InputMessagesFilterDocument)
+        random = await event.client.get_messages('@LunaPlugins', limit=None, filter=InputMessagesFilterDocument)
         random = choice(random)
         random_file = random.file.name
 
-    result = f'**[⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝](@silgiub) Plugin Mağazası**\n\n**🔎 Axtarış:** `{plugin}`\n**🔢 Nəticələr: __({len(plugins)})__**\n➖➖➖➖➖➖➖➖➖➖➖➖➖\n\n'
+    result = f'**[❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️](@LunaDestek) Plugin Mağazası**\n\n**🔎 Axtarış:** `{plugin}`\n**🔢 Nəticələr: __({len(plugins)})__**\n➖➖➖➖➖➖➖➖➖➖➖➖➖\n\n'
     
     if len(plugins) == 0:
         result += f'**Həç bir şey tapa bilmədim...**\n`{random_file}` __plugininə nə deirsən?__'
@@ -62,13 +62,13 @@ async def sinstall(event):
     try:
         plugin = int(plugin)
     except:
-        return await event.edit('**[⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝](@silgiub) Plugin Mağazası**\n__Versiya 2.3__\n\n**⚠️ Xəta:** `Xaiş sadəcə rəqəm yazın. Əgəe Plugin axtarmaq istəyirsizsə .store əmrini işlədin.`')
+        return await event.edit('**[❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️](@LunaDestek) Plugin Mağazası**\n__Versiya 2.3__\n\n**⚠️ Xəta:** `Xaiş sadəcə rəqəm yazın. Əgəe Plugin axtarmaq istəyirsizsə .store əmrini işlədin.`')
     
-    await event.edit('**[⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝](@silgiub) Plugin Mağazası**\n\n`🔎 Plugin\'i gətirirəm... Xaiş biraz gözlə.`')
-    plugin = await event.client.get_messages('@silgiubplugin', ids=plugin)
-    await event.edit(f'**[⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝](@silgiub) Plugin Mağazası**\n\n`✅ {plugin.file.name} plugini gətirildi!`\n`⬇️ Plugini yükləyirəm... Xaiş gözləyin.`')
+    await event.edit('**[❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️](@LunaDestek) Plugin Mağazası**\n\n`🔎 Plugin\'i gətirirəm... Xaiş biraz gözlə.`')
+    plugin = await event.client.get_messages('@LunaPlugins', ids=plugin)
+    await event.edit(f'**[❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️](@LunaDestek) Plugin Mağazası**\n\n`✅ {plugin.file.name} plugini gətirildi!`\n`⬇️ Plugini yükləyirəm... Xaiş gözləyin.`')
     dosya = await plugin.download_media('./userbot/modules/')
-    await event.edit(f'**[⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝](@silgiub) Plugin Mağazası**\n\n`✅ {plugin.file.name} yüklənmə uğurlu oldu!`\n`⬇️ Plugini yükləyirəm... Xaiş gözləyin.`')
+    await event.edit(f'**[❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️](@LunaDestek) Plugin Mağazası**\n\n`✅ {plugin.file.name} yüklənmə uğurlu oldu!`\n`⬇️ Plugini yükləyirəm... Xaiş gözləyin.`')
     
     try:
         spec = importlib.util.spec_from_file_location(dosya, dosya)
@@ -76,7 +76,7 @@ async def sinstall(event):
         spec.loader.exec_module(mod)
     except Exception as e:
         os.remove("./userbot/modules/" + dosya)
-        return await event.edit(f'**[⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝](@silgiub) Plugin Mağazası**\n\n**⚠️ Xəta:** `Plugin xətalıdır. {e}`\n**XAİŞ BUNU İDARƏÇİLƏRƏ BİLDİRİN!**')
+        return await event.edit(f'**[❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️](@LunaDestek) Plugin Mağazası**\n\n**⚠️ Xəta:** `Plugin xətalıdır. {e}`\n**XAİŞ BUNU İDARƏÇİLƏRƏ BİLDİRİN!**')
 
     dosy = open(dosya, "r").read()
     if re.search(r"@tgbot\.on\(.*pattern=(r|)\".*\".*\)", dosy):
@@ -100,7 +100,7 @@ async def sinstall(event):
             if re.search(r'CmdHelp\(.*\)', dosy):
                 cmdhelp = re.findall(r"CmdHelp\([\"'](.*)[\"']\)", dosy)[0]
                 await plugin.forward_to(PLUGIN_CHANNEL_ID)
-                return await event.edit(f'**[⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝](@silgiub) Plugin Mağazası**\n\n**✅ Modul uğurlar yükləndi!**\n__ℹ️ Modulun əmrləri və işlədilişi haqqında məlumat almaq üçün__ `.silgi {cmdhelp}` __yazın.__')
+                return await event.edit(f'**[❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️](@LunaDestek) Plugin Mağazası**\n\n**✅ Modul uğurlar yükləndi!**\n__ℹ️ Modulun əmrləri və işlədilişi haqqında məlumat almaq üçün__ `.silgi {cmdhelp}` __yazın.__')
             else:
                 dosyaAdi = plugin.file.name.replace('.py', '')
                 CmdHelp = userbot.cmdhelp.CmdHelp(dosyaAdi, False)
@@ -142,7 +142,7 @@ async def sinstall(event):
                     CmdHelp.add_command(Komut, None, 'Bu plugin qırağdan yüklənib. Hər hansı bir açıqlama edilməyib.')
                 CmdHelp.add()
                 await plugin.forward_to(PLUGIN_CHANNEL_ID)
-                return await event.edit(f'**[⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝](@silgiub) Plugin Mağazası**\n\n**✅ Modül uğurla yükləndi!**\n__ℹ️ Modulun əmrləri və işlədilişi haqqında məlumat almaq üçün` `.silgi {dosyaAdi}` `yazın.__')
+                return await event.edit(f'**[❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️](@LunaDestek) Plugin Mağazası**\n\n**✅ Modül uğurla yükləndi!**\n__ℹ️ Modulun əmrləri və işlədilişi haqqında məlumat almaq üçün` `.silgi {dosyaAdi}` `yazın.__')
 
 userbot.cmdhelp.CmdHelp('store').add_command(
     'store', '<söz>', 'Plugin kanalına son atılan Pluginləri gətirər. Əgər söz yazarsanız axtarış edər.'

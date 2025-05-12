@@ -1,5 +1,5 @@
 
-from userbot import ASYNC_POOL, SPOTIFY_DC, G_DRIVE_CLIENT_ID, lastfm, LYDIA_API_KEY, YOUTUBE_API_KEY, OPEN_WEATHER_MAP_APPID, AUTO_PP, REM_BG_API_KEY, OCR_SPACE_API_KEY, PM_AUTO_BAN, BOTLOG_CHATID, SILGI_VERSION
+from userbot import ASYNC_POOL, SPOTIFY_DC, G_DRIVE_CLIENT_ID, lastfm, LYDIA_API_KEY, YOUTUBE_API_KEY, OPEN_WEATHER_MAP_APPID, AUTO_PP, REM_BG_API_KEY, OCR_SPACE_API_KEY, PM_AUTO_BAN, BOTLOG_CHATID, LUNA_VERSION
 from userbot.events import register
 from userbot import CMD_HELP, tgbot
 from telethon import version
@@ -44,7 +44,7 @@ async def durums(event):
 **Python {LANG['VERSION']}:** `{python_version()}`
 **TeleThon {LANG['VERSION']}:** `{version.__version__}`
 **{LANG['PLUGIN_COUNT']}:** `{len(CMD_HELP)}`
-**⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝ {LANG['VERSION']}:** `{SILGI_VERSION}`
+**❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️ {LANG['VERSION']}:** `{LUNA_VERSION}`
     """)
 
 CmdHelp('status').add_command(
