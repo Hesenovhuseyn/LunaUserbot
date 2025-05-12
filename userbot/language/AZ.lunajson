@@ -1,5 +1,5 @@
 {
-    "__SILGIJSON__": true,
+    "__LUNAJSON__": true,
     "LANGUAGE": "Azərbaycanca",
     "LANGCODE": "az",
     "AUTHOR": "@HuseynH",
@@ -8,7 +8,7 @@
             "START": "Salam mən ❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️! Mən sahibimə (@{username}) kömək olmaq üçün varam, yəni sənə köməkçi ola bilmərəm :/ Ama sən də bir ❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️ quraşdıra bilərsən; Qrupa bax @LunaDestek",
             "ITITLE": "Xaiş sadəcə .kömek əmri ilə işladin",
             "IHELP": "**❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️** [LunaDestek](https://t.me/LunaDestek) __💻__\n\n**Yüklənən Modul Sayı:** `{cmdlen}`\n**Səhifə:** 1/{veriler}",
-            "WORK": "**❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️** [LunaDestek](https://t.me/LunaDestek) __işləyir__\n\n👤 **Sahibim** {SILGI_USER}\n __Qulluğunda hazıram__",
+            "WORK": "**❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️** [LunaDestek](https://t.me/LunaDestek) __işləyir__\n\n👤 **Sahibim** {LUNA_USER}\n __Qulluğunda hazıram__",
             "UPLOAD": "Fayl uğurlu bir şəkildə {site} saytına yükləndi!\n\nYükləmə zamanı: {time} saniyə\n[‏‏‎ ‎]({link})",
             "IINFO": "[❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️](https://t.me/LunaDestek)'u işlətməyi yoxlayın!\nHesabınızı bot'a çevirə bilərsiz və bunları işlədə bilərsiz. Unutmayın, siz başqasının botunu idarə edə bilmərsiz! Altdakı GitHub adresindən bütün qurulum haqda məlumat var.",
             "LIST": "📱Plugin listi açıldı",
