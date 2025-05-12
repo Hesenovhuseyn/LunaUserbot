@@ -264,7 +264,7 @@ for module_name in ALL_MODULES:
     imported_module = import_module("userbot.modules." + module_name)
 
 LOGS.info("Botunuz işleyir! Her hansi bir söhbete .alive yazaraq Test edin."
-          " Yardıma ehtiyacınız varsa, Destek qrupumuza buyurun t.me/silgiub")
+          " Yardıma ehtiyacınız varsa, Destek qrupumuza buyurun t.me/lunadestek")
 LOGS.info(f"Bot versiyası:❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️ {LUNA_VERSION}")
 
 """
