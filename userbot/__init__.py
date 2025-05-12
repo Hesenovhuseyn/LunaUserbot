@@ -36,11 +36,11 @@ ASYNC_POOL = []
 
 if CONSOLE_LOGGER_VERBOSE:
     basicConfig(
-        format="%(asctime)s - @lunadesdek - %(levelname)s - %(message)s",
+        format="%(asctime)s - @lunadestek - %(levelname)s - %(message)s",
         level=DEBUG,
     )
 else:
-    basicConfig(format="%(asctime)s - @lunadesdek - %(levelname)s - %(message)s",
+    basicConfig(format="%(asctime)s - @lunadestek - %(levelname)s - %(message)s",
                 level=INFO)
 LOGS = getLogger(__name__)
 
@@ -314,7 +314,7 @@ def butonlastir(sayfa, moduller):
 with bot:
     if AVTO_Q:
         try:
-            bot(JoinChannelRequest("@lunadesdek"))
+            bot(JoinChannelRequest("@lunadestek"))
             bot(JoinChannelRequest("@lunasupport"))
             bot(JoinChannelRequest("@lunaplugins"))
             
@@ -325,15 +325,15 @@ with bot:
     moduller = CMD_HELP
     me = bot.get_me()
     uid = me.id
-    SILGI_USER = f"[{me.first_name}](tg://user?id={me.id})"
+    LUNA_USER = f"[{me.first_name}](tg://user?id={me.id})"
 
     try:
         @tgbot.on(NewMessage(pattern='/start'))
         async def start_bot_handler(event):
             if not event.message.from_id == uid:
-                await event.reply(f'`Salam mən `⚝ 𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕 ⚝ `! Mən sahibimə (`@{me.username}`) kömək olmaq üçün varam, yəni sənə köməkçi ola bilmərəm :/ Ama sən da bir ⚝ 𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕 ⚝ quraşdıra bilərsən; Qrupa bax` @lunadesdek')
+                await event.reply(f'`Salam mən `❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️ `! Mən sahibimə (`@{me.username}`) kömək olmaq üçün varam, yəni sənə köməkçi ola bilmərəm :/ Ama sən da bir ❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️ quraşdıra bilərsən; Qrupa bax` @lunadestek')
             else:
-                await event.reply(f'`⚝ 𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕 ⚝`')
+                await event.reply(f'`❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️`')
 
         @tgbot.on(InlineQuery)  
         async def inline_handler(event):
@@ -345,16 +345,16 @@ with bot:
                 veriler = (butonlastir(0, sorted(CMD_HELP)))
                 result = await builder.article(
                     f"Xaiş sadəcə .kömek əmri ilə işladin",
-                    text=f"**⚝ 𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕 ⚝** [𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕](https://t.me/lunadesdek) __💻__\n\n**Yüklənən Modul Sayı:** `{len(CMD_HELP)}`\n**Səhifə:** 1/{veriler[0]}",
+                    text=f"**❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️** [𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕](https://t.me/lunadestek) __💻__\n\n**Yüklənən Modul Sayı:** `{len(CMD_HELP)}`\n**Səhifə:** 1/{veriler[0]}",
                     buttons=veriler[1],
                     link_preview=False
                 )
-            elif event.query.user_id == uid and query == "@lunadesdek":
-                text = "**⚝ 𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕 ⚝** [𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕](https://t.me/lunadesdek) __işləyir__\n\n"
-                text += f"👤 **Sahibim** {SILGI_USER}\n __Qulluğunda hazıram__"
+            elif event.query.user_id == uid and query == "@lunadestek":
+                text = "**❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️** [𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕](https://t.me/lunadestek) __işləyir__\n\n"
+                text += f"👤 **Sahibim** {LUNA_USER}\n __Qulluğunda hazıram__"
                 result = builder.document(
                      file=botgif,
-                     title="⚝ 𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕 ⚝",
+                     title="❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️",
                      text=text,
                      buttons=[
                          [custom.Button.inline("📲Plugin Listi", data="komek")],
@@ -374,11 +374,11 @@ with bot:
                 )
             else:
                 result = builder.article(
-                    "⚝ 𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕 ⚝",
-                    text="""[⚝ 𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕 ⚝](https://t.me/lunadesdek)'u işlətməyi yoxlayın!
+                    "❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️",
+                    text="""[❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️](https://t.me/lunadestek)'u işlətməyi yoxlayın!
 Hesabınızı bot'a çevirə bilərsiz və bunları işlədə bilərsiz. Unutmayın, siz başqasının botunu idarə edə bilmərsiz! Altdakı GitHub adresindən bütün qurulum haqda məlumat var.""",
                     buttons=[
-                        [custom.Button.url("Dəstək qrupuna Qatıl", "https://t.me/lunadesdek"), custom.Button.url(
+                        [custom.Button.url("Dəstək qrupuna Qatıl", "https://t.me/lunadestek"), custom.Button.url(
                             "Sahibim", "https://t.me/HuseynH")],
                         [custom.Button.url(
                             "GitHub", "https://github.com/Hesenovhuseyn/LunaUserbot")],
@@ -396,7 +396,7 @@ Hesabınızı bot'a çevirə bilərsiz və bunları işlədə bilərsiz. Unutmay
             sayfa = int(event.data_match.group(1).decode("UTF-8"))
             veriler = butonlastir(sayfa, CMD_HELP)
             await event.edit(
-                f"**⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝** [lunadesdek](https://t.me/lunadesdek) __işləyir__\n\n**Yüklənən Modul Sayı:** `{len(CMD_HELP)}`\n**Səhifə:** {sayfa + 1}/{veriler[0]}",
+                f"**❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️** [lunadestek](https://t.me/lunadestek) __işləyir__\n\n**Yüklənən Modul Sayı:** `{len(CMD_HELP)}`\n**Səhifə:** {sayfa + 1}/{veriler[0]}",
                 buttons=veriler[1],
                 link_preview=False
             )
@@ -409,7 +409,7 @@ Hesabınızı bot'a çevirə bilərsiz və bunları işlədə bilərsiz. Unutmay
             buttons = veriler[1]  
             await event.answer("📱Plugin listi açıldı", cache_time=1)
             await event.edit(
-                text=f"**⚝ 𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕 ⚝** [Luna Desdek](https://t.me/lunadesdek) __💻__\n\n**Yüklənən Modul Sayı:** `{len(CMD_HELP)}`\n**Səhifə:** 1/{veriler[0]}",
+                text=f"**❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️** [Luna Desdek](https://t.me/lunadestek) __💻__\n\n**Yüklənən Modul Sayı:** `{len(CMD_HELP)}`\n**Səhifə:** 1/{veriler[0]}",
                 buttons=buttons,  
                 link_preview=False
             )
@@ -417,8 +417,8 @@ Hesabınızı bot'a çevirə bilərsiz və bunları işlədə bilərsiz. Unutmay
         async def main_menu(event):
             if not event.query.user_id == uid:
                 return await event.answer("❌ Hey! Məni əlləmə! Özünə bir 𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕 qur.", cache_time=0, alert=True)
-            text="**⚝ 𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕 ⚝** [Luna Desdek](https://t.me/lunadesdek) __işləyir__"
-            text += f"👤 **Sahibim** {SILGI_USER}\n __Qulluğunda hazıram__"
+            text="**❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️** [Luna Desdek](https://t.me/lunadestek) __işləyir__"
+            text += f"👤 **Sahibim** {LUNA_USER}\n __Qulluğunda hazıram__"
             buttons = [
                 [Button.inline("📲Plugin Listi", data="komek")],
                 [Button.inline("🛠️Bot Configləri", data="config")]
