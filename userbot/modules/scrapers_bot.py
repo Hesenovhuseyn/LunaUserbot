@@ -144,18 +144,18 @@ async def memeyap(event):
         if reply.photo:
             Resim = await reply.download_media()
         elif reply.sticker and reply.file.ext == ".webp":
-            if os.path.exists("./SilgiSticker.png"):
-                os.remove("./SilgiSticker.png")
+            if os.path.exists("./LunaSticker.png"):
+                os.remove("./LunaSticker.png")
 
             foto = await reply.download_media()
             im = Image.open(foto).convert("RGB")
-            im.save("SilgiSticker.png", "png")
-            Resim = "SilgiSticker.png"
+            im.save("LunaSticker.png", "png")
+            Resim = "LunaSticker.png"
         elif reply.sticker and reply.file.ext == ".tgs":
             sticker = await reply.download_media()
-            os.system(f"lottie_convert.py --frame 0 -if lottie -of png '{sticker}' SilgiSticker.png")
+            os.system(f"lottie_convert.py --frame 0 -if lottie -of png '{sticker}' LunaSticker.png")
             os.remove(sticker)
-            Resim = "SilgiSticker.png"
+            Resim = "LunaSticker.png"
         elif reply.media:
             Resim = await reply.download_media()
             Sure = os.system("ffmpeg -i '"+Resim+"' 2>&1 | grep Duration | awk '{print $2}' | tr -d , | awk -F ':' '{print ($3+$2*60+$1*3600)/2}'``")
