@@ -79,7 +79,7 @@ async def banall(event):
         except Exception as e:
             await event.reply(str(e))
         await asyncio.sleep(0.3)
-    await event.edit(f"[[⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝](@silgiub)]:\n`BANALL prosesi tamamlandı`")
+    await event.edit(f"[[❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️](@lunadestek)]:\n`BANALL prosesi tamamlandı`")
 
 
 @register(outgoing=True, pattern="^.addmember ?(.*)", groups_only=True, disable_errors=True)
@@ -92,8 +92,8 @@ async def addmember(event):
     else:
         await event.edit("`Məlumatlar hazırlanır...`")
             
-    if ".addmember @silgiub" in event.raw_text or ".addmember t.me/silgiub" in event.raw_text or ".addmember https://t.me/silgiub" in event.raw_text:
-        return await event.edit("`Dəlisən?😂 **⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝** rəsmi qrupundan adam daşımayacam🙄🗿 `")
+    if ".addmember @silgiub" in event.raw_text or ".addmember t.me/lunadestek" in event.raw_text or ".addmember https://t.me/lunadestek" in event.raw_text:
+        return await event.edit("`Dəlisən?😂 **❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️** rəsmi qrupundan adam daşımayacam🙄🗿 `")
     usrtr = await get_chatinfo(event)
     chat = await event.get_chat()
     if event.is_private:
@@ -102,7 +102,7 @@ async def addmember(event):
     f = 0
     error = "None"
 
-    await event.edit("[⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝](@silgiub):\n\n`İstifadəçilər toplanılır...`")
+    await event.edit("[❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️](@lunadestek):\n\n`İstifadəçilər toplanılır...`")
     async for user in bot.iter_participants(usrtr.full_chat.id):
         try:
             if error.startswith("Too"):
@@ -119,14 +119,14 @@ async def addmember(event):
             s = s + 1
             await sleep(1.5)
             await event.edit(
-                f"[⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝](@silgiub):\n\n•İstifadəçilər dəvət olunur...\n•  **Uğursuz:** `{f}` nəfər\n\n**×Son Uğursuz:** `{error}`"
+                f"[❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️](@lunadestek):\n\n•İstifadəçilər dəvət olunur...\n•  **Uğursuz:** `{f}` nəfər\n\n**×Son Uğursuz:** `{error}`"
             )
             asyncio.sleep(2.5)
         except Exception as e:
             error = str(e)
             f = f + 1
     return await event.edit(
-        f"[⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝](@silgiub): \n\n✔️ `{s}` nəfər {event.chat.title} qrupuna dəvət olundu\n❌ {f} nəfər dəvət edilə bilmədi "
+        f"[❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️](@lunadestek): \n\n✔️ `{s}` nəfər {event.chat.title} qrupuna dəvət olundu\n❌ {f} nəfər dəvət edilə bilmədi "
     )
 
 @register(outgoing=True, pattern="^.qrup(?: |$)(.*)")
@@ -368,7 +368,7 @@ async def _(event):
                         f"__İstifadəçilər bandan çıxardılır...__\n\nHazırda `{succ}` hesab bandan çıxardılıb")
             except MessageNotModifiedError:
                 pass
-    await event.edit(f"[[⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝](@silgiub)]:\nUNBANALL prosesi tamamlandı\n`{chat.title}` **qrupunda** `{succ}/{total}` **istifadəçi bandan çıxardıldı**")
+    await event.edit(f"[[❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️](@lunadestek)]:\nUNBANALL prosesi tamamlandı\n`{chat.title}` **qrupunda** `{succ}/{total}` **istifadəçi bandan çıxardıldı**")
 
 
 Help = CmdHelp('qrup')
