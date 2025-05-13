@@ -45,5 +45,5 @@ async def chatbot_aktiv(event):
 CmdHelp('chatbot').add_command(
     'chatbot', '<on/off>', 'Yazdığınız gruplarda ChatBot özəlliyini aktivləşdirər'
 ).add_info(
-    '❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️ Məhsuludur'
+    '⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝ mehsuludur'
 ).add()
