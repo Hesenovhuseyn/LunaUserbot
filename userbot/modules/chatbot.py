@@ -1,4 +1,5 @@
-# ❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️ Əkmə OĞLUMMM
+# ⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝ Məhsuludur Əkmə oğul
+
 from telethon import events
 from userbot import bot, GRUP_ID
 from userbot.modules.sql_helper import chatbot_sql as db

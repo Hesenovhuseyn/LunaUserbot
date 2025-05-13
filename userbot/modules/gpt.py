@@ -1,4 +1,5 @@
-# ❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️ məhsuludur əkmə peysərin balası
+# ⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝ Məhsuludur Əkmə oğul
+
 from telethon import events
 from userbot import bot
 from g4f.client import Client
