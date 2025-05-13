@@ -1,18 +1,18 @@
 {
-  "name": "⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝",
+  "name": "❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️",
   "description": "Telegram UserBot",
   "logo": "https://raw.githubusercontent.com/Hesenovhuseyn/LunaUserbot/master/userbot/LunaUserbot.jpg",
   "keywords": [
     "telegram",
     "userbot",
-	"Silgi",
+	"❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️",
     "plugin",
     "modular",
     "productivity"
   ],
   "repository": "https://github.com/Hesenovhuseyn/LunaUserbot",
-  "website":   "https://t.me/silgiuserbot",
-  "success_url": "https://t.me/silgiuserbot",
+  "website":   "https://github.com/Hesenovhuseyn/LunaUserbot",
+  "success_url": "https://github.com/Hesenovhuseyn/LunaUserbot",
   "stack": "container",
   "env": {
     "API_KEY": {
@@ -172,7 +172,7 @@
     },
     "DEFAULT_BIO": {
       "description": "Həmişəlik profil biyoqrafiyası.",
-      "value": "⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝",
+      "value": "❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️",
       "required": false
     },
     "G_DRIVE_CLIENT_SECRET": {
@@ -212,7 +212,7 @@
     },
     "PAKET_ISMI": {
       "description": "Fırlat əmri paket adını seçin. Paket adı belə olacaq: @İstifadəçiAdın verdiyin dəyər",
-      "value": "@silgiuserbot Paketi",
+      "value": "@lunauserbot Paketi",
       "required": false
     },
     "AVTO_Q": {
