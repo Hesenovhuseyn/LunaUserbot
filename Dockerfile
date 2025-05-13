@@ -12,7 +12,7 @@ RUN pip install wheel
 RUN pip install --upgrade pip setuptools
 RUN apt-get update && apt-get install -y build-essential
 RUN python3 --version
-RUN git clone https://github.com/Silgimusicbot/SilgiUserbot /root/SilgiUserbot
+RUN git clone https://github.com/Hesenovhuseyn/LunaUserbot /root/LunaUserBot
 WORKDIR /root/SilgiUserbot/
 RUN pip3 install --upgrade pip
 RUN pip3 install -r requirements.txt
