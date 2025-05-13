@@ -1,4 +1,4 @@
-# SILGI
+# [❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️](@lunadestek)
 import asyncio
 from userbot.events import register
 from userbot import BOTLOG_CHATID, bot
