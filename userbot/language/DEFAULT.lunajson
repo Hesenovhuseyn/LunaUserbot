@@ -33,9 +33,9 @@
             "DTO_PLUGIN_CAPTION": "`Bu` [❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️](https://t.me/LunaDestek) `pluginidir.`"
         },
         
-        "__silgi": {
+        "__luna": {
             "NEED_PLUGIN": "**❗️Zəhmət olmasa düzgün bir** `❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️` **modulu qeyd edin.**\n**ℹ️ Hansısa plugin haqqında məlumat lazımdırsa, əvvəlcə plugini yüklədiyinizdən əmin olun.**",
-            "NEED_MODULE": "`Modullar aşağıdadır ⬇️ \nİstifadəsi: .silgi <modul adı>`"
+            "NEED_MODULE": "`Modullar aşağıdadır ⬇️ \nİstifadəsi: .luna <modul adı>`"
         },
 
        "extra": {
@@ -182,7 +182,7 @@
             "ALREADY": "`Hazırda %s onsuzda avtomatik olaraq dəyişir.`",
             "SETTING": "`%s hazırlanır...`",
             "BIO": "⌚️ Saat: {saat} | ",
-            "NICK": "@silgiub",
+            "NICK": "@LunaDestek",
             "SETTED": "`%s hazırlandı :)`",
             "NAME": " | %s",
             "AUTO1": "ad ya da bio",
@@ -480,7 +480,7 @@
             "GOODBYE_MFRS": "`Görüşənədək... *Windows XP söndürlmə səsi*`",
             "RESTARTING": "`Bot yenidən qoşulur..`",
             "SUPPORT_GROUP": "[Buradan](https://t.me/LunaDestek) Dəstək qrupumuza çata bilərsiniz.",
-            "CREATOR": "Bu bot \n[SILGI](https://t.me/HuseynH) tərəfindən hazırlanmışdır. \n",
+            "CREATOR": "Bu bot \n[LUNA](https://t.me/HuseynH) tərəfindən hazırlanmışdır. \n",
             "README": "❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️",
             "REPO": "❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️",
             "RD1": "<əşya1> <əşya2>",
@@ -908,7 +908,7 @@
             "ISP": "İnternet xidməti təminatçısı: "
         },
         "userbot": {
-            "SILGI": "`❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️ admininə/sahibinə bunu edən bilmərəm.`"
+            "LUNA": "`❤️𝑳𝒖𝒏𝒂𝑼𝒔𝒆𝒓𝒃𝒐𝒕❤️ admininə/sahibinə bunu edən bilmərəm.`"
         }
 
     }
