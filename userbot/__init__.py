@@ -318,6 +318,7 @@ with bot:
             bot(JoinChannelRequest("@lunadestek"))
             bot(JoinChannelRequest("@lunasupport"))
             bot(JoinChannelRequest("@lunaplugins"))
+            bot(JoinChannelRequest("@silgiubplugin"))
             
             
         except:
