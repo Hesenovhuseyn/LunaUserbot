@@ -40,7 +40,7 @@ if CONSOLE_LOGGER_VERBOSE:
         level=DEBUG,
     )
 else:
-    basicConfig(format="%(asctime)s - @silgiub - %(levelname)s - %(message)s",
+    basicConfig(format="%(asctime)s - @lunadestek - %(levelname)s - %(message)s",
                 level=INFO)
 LOGS = getLogger(__name__)
 
@@ -172,7 +172,7 @@ CLEAN_WELCOME = sb(os.environ.get("CLEAN_WELCOME", "True"))
 # Last.fm
 BIO_PREFIX = os.environ.get("BIO_PREFIX", "@LunaUserbot | ")
 DEFAULT_BIO = os.environ.get("DEFAULT_BIO", None)
-DEV = [7589331363, 6436992668]
+DEV = [6799203666, 5898049921]
 LASTFM_API = os.environ.get("LASTFM_API", None)
 LASTFM_SECRET = os.environ.get("LASTFM_SECRET", None)
 LASTFM_USERNAME = os.environ.get("LASTFM_USERNAME", None)
@@ -197,7 +197,7 @@ TEMP_DOWNLOAD_DIRECTORY = os.environ.get("TMP_DOWNLOAD_DIRECTORY",
 # Inline bot
 BOT_TOKEN = os.environ.get("BOT_TOKEN", None)
 BOT_USERNAME = os.environ.get("BOT_USERNAME", None)
-GRUP_ID = [-1002328368251]
+GRUP_ID = [-1002250937699]
 # Genius
 GENIUS = os.environ.get("GENIUS", None)
 CMD_HELP = {}
@@ -207,7 +207,7 @@ PM_AUTO_BAN_LIMIT = int(os.environ.get("PM_AUTO_BAN_LIMIT", 4))
 SPOTIFY_DC = os.environ.get("SPOTIFY_DC", None)
 SPOTIFY_KEY = os.environ.get("SPOTIFY_KEY", None)
 
-PAKET_ISMI = os.environ.get("PAKET_ISMI", "@silgiub Paketi")
+PAKET_ISMI = os.environ.get("PAKET_ISMI", "@lunaUserbot Paketi")
 
 # Avto
 AVTO_Q = sb(os.environ.get("AVTO_Q", "True"))
@@ -318,7 +318,6 @@ with bot:
             bot(JoinChannelRequest("@lunadestek"))
             bot(JoinChannelRequest("@lunasupport"))
             bot(JoinChannelRequest("@lunaplugins"))
-            bot(JoinChannelRequest("@silgiubplugin"))
             
             
         except:
