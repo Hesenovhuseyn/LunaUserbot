@@ -5,6 +5,7 @@ from telethon.tl import functions
 from userbot.events import register
 from userbot import BRAIN_CHECKER, WHITELIST
 from userbot.language import get_value
+from userbot.cmdhelp import CmdHelp
 
 LANG = get_value("userbot")
 
@@ -26,7 +27,7 @@ async def clone(event):
         return
     
     if replied_user.id in BRAIN_CHECKER or replied_user.id in WHITELIST:
-        await event.edit(LANG['SILGI'])
+        await event.edit(LANG['LUNA'])
         return
 
     me = await event.client.get_me()
@@ -96,3 +97,9 @@ async def get_user(event):
             except ValueError:
                 return None
     return None
+
+CmdHelp('klon').add_command(
+    'klon', '.klon'
+).add_command(
+    'unklon', '.revert'
+).add()
