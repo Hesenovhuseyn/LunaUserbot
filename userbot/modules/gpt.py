@@ -46,7 +46,7 @@ async def igpt_plugin(event):
     except Exception as e:
         await event.edit(f"Xəta baş verdi:\n`{str(e)}`")
 CmdHelp('chatgpt').add_command(
-    'gpt', 'sual', 'ChatGPT nin UserBot versiyası məsələn .gpt SilgiUserbot niyə ən yaxşı userbotdur?'
+    'gpt', 'sual', 'ChatGPT nin UserBot versiyası məsələn .gpt LunaUserbot niyə ən yaxşı userbotdur?'
 ).add_command(
     'igpt', 'şəkil', 'Yazdığınız şəkli yaradar'
 ).add_info(
