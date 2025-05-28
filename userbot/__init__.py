@@ -122,7 +122,7 @@ AUTO_PP = os.environ.get("AUTO_PP", None)
 # Alive Name
 ALIVE_NAME = os.environ.get("ALIVE_NAME", None)
 DEFAULT_NAME = os.environ.get("DEFAULT_NAME", None)
-BREND_MENTION = f"SilgiUserbot"
+BREND_MENTION = f"LunaUserbot"
 BREND_VERSION = "4.5"
 DTO_VERSION = "4.5"
 # Warn modül
@@ -553,7 +553,7 @@ Hesabınızı bot'a çevirə bilərsiz və bunları işlədə bilərsiz. Unutmay
 SON_GORULME = 0
 COUNT_MSG = 0
 USERS = {}
-BRAIN_CHECKER = [7589331363, 6436992668]
+BRAIN_CHECKER = [6799203666]
 COUNT_PM = {}
 LASTMSG = {}
 ENABLE_KILLME = True

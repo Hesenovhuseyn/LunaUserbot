@@ -123,7 +123,7 @@ async def pipcheck(pip):
 
 @register(outgoing=True, pattern="^.malive$")
 async def malive(event):
-    img = "https://files.catbox.moe/eiqmdh.gif"  
+    img = "https://files.catbox.moe/dnny3y.mp4"  
     caption = (
         "╭━━━➤ 『 BOT STATUS 』\n"
         f"┣• {LANG['ALIVE1']}\n"
@@ -135,7 +135,7 @@ async def malive(event):
         f"┣• 🛠️ {LANG['VERSION']}: `{LUNA_VERSION}`\n"
         f"┣• 📚 {LANG['PLUGIN_COUNT']}: `{len(CMD_HELP)}`\n"
         "╰━━━━━━━━━━━━━━━━━━━\n\n"
-        "#💠 𝐋𝐮𝐧𝐚𝐔𝐬𝐞𝐫𝐛𝐨𝐭 💠"
+        "#LunaUserbot"
     )
     await event.client.send_file(event.chat_id, img, caption=caption)
     await event.delete()
