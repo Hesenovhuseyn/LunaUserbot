@@ -422,7 +422,7 @@ Hesabınızı bot'a çevirə bilərsiz və bunları işlədə bilərsiz. Unutmay
             if not event.query.user_id == uid:
                 return await event.answer("❌ Hey! Məni əlləmə! Özünə bir 💠 𝐋𝐮𝐧𝐚𝐔𝐬𝐞𝐫𝐛𝐨𝐭 💠 qur.", cache_time=0, alert=True)
             text="**💠 𝐋𝐮𝐧𝐚𝐔𝐬𝐞𝐫𝐛𝐨𝐭 💠** [LunaUserbot](https://t.me/LunaDestek) __işləyir__"
-            text += f"👤 **Sahibim** {SILGI_USER}\n __Qulluğunda hazıram__"
+            text += f"👤 **Sahibim** {LUNA_USER}\n __Qulluğunda hazıram__"
             buttons = [
                 [Button.inline("📲Plugin Listi", data="komek")],
                 [Button.inline("🛠️Bot Configləri", data="config")]
