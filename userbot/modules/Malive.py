@@ -1,3 +1,6 @@
+### Reponu öz adına çıxaran @HuseynH ata desin
+
+
 from asyncio import create_subprocess_shell as asyncrunapp
 from asyncio.subprocess import PIPE as asyncPIPE
 from platform import uname
