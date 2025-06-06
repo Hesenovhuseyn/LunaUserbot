@@ -1,4 +1,3 @@
-#
 #  kodlardan bircə hərif belə götürənin kimliyindın aslı olmayaraq nəslin sikim
 # 
 #  Reponu öz adına çıxaran @HuseynH ata desin
