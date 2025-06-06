@@ -98,5 +98,5 @@ CmdHelp('etiket').add_command(
 ).add_info(
     'Etiketləmə plugini'
 ).add_sahib(
-    '[SİLGİ](t.me/hvseyn) tərəfindən hazırlanmışdır.'
+    '[HUSEYN](t.me/huseynh) tərəfindən hazırlanmışdır.'
 ).add()
