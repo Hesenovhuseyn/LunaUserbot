@@ -1,4 +1,8 @@
-### Reponu öz adına çıxaran @HuseynH ata desin
+#
+#  kodlardan bircə hərif belə götürənin kimliyindın aslı olmayaraq nəslin sikim
+# 
+#  Reponu öz adına çıxaran @HuseynH ata desin
+
 
 
 from asyncio import create_subprocess_shell as asyncrunapp
