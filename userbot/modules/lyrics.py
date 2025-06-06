@@ -117,5 +117,5 @@ CmdHelp('lyrics').add_command(
 ).add_command(
     'singer', (LANG['SG1']), (LANG['SG2']), (LANG['SG3'])
 ).add_sahib(
-    "[SILGI](t.me/silgiteam) tərəfindən hazırlanmışdır"
+    "[HUSEYN](t.me/huseynh) tərəfindən hazırlanmışdır"
 ).add()
