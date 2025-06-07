@@ -160,7 +160,8 @@ try:
 
     # PLUGIN MESAJLARI AYARLIYORUZ
     PLUGIN_MESAJLAR = {}
-    ORJ_PLUGIN_MESAJLAR = {"alive": "💠 𝐋𝐮𝐧𝐚𝐔𝐬𝐞𝐫𝐛𝐨𝐭 💠 𝓐𝓴𝓽𝓲𝓿𝓭𝓲𝓻...", 
+    ORJ_PLUGIN_MESAJLAR = {"alive": "💠 𝐋𝐮𝐧𝐚𝐔𝐬𝐞𝐫𝐛𝐨𝐭 💠 𝓐𝓴𝓽𝓲𝓿𝓭𝓲𝓻...",
+                           "malive": "https://files.catbox.moe/dnny3y.mp4",
                            "afk": f"{str(choice(AFKSTR))}", 
                            "kickme": "Bye-bye mən qrupdan çıxdım 🥰", 
                            "pm": UNAPPROVED_MSG, 
@@ -172,7 +173,7 @@ try:
                            "block": "{mention}, bloklandın!", 
                            "restart": "💠 𝐋𝐮𝐧𝐚𝐔𝐬𝐞𝐫𝐛𝐨𝐭 💠💻 𝚢𝚎𝚗𝚒𝚍ə𝚗 𝚋𝚊ş𝚕𝚊𝚍ı𝚕ı𝚛. . ."}
 
-    PLUGIN_MESAJLAR_TURLER = ["alive", "afk", "kickme", "pm", "dızcı", "ban", "mute", "approve", "disapprove", "block", "restart"]
+    PLUGIN_MESAJLAR_TURLER = ["alive", "malive", "afk", "kickme", "pm", "dızcı", "ban", "mute", "approve", "disapprove", "block", "restart"]
     for mesaj in PLUGIN_MESAJLAR_TURLER:
         dmsj = MSJ_SQL.getir_mesaj(mesaj)
         if dmsj == False:

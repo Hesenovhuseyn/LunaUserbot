@@ -27,7 +27,7 @@ async def degistir(event):
         mesaj = []
 
     plugin = plugin.strip()
-    TURLER = ["afk", "alive", "pm", "kickme", "dızcı", "ban", "mute", "approve", "disapprove", "block", "restart"]
+    TURLER = ["afk", "alive", "malive", "pm", "kickme", "dızcı", "ban", "mute", "approve", "disapprove", "block", "restart"]
     if type(mesaj) == list:
         if plugin in TURLER:
             if event.is_reply:
