@@ -121,6 +121,58 @@ async def pipcheck(pip):
     else:
         await pip.edit(LANG['EXAMPLE'])
 
+@register(outgoing=True, pattern="^.malive$")
+async def malive(event):
+    img = PLUGIN_MESAJLAR['malive']  
+    caption = (
+        "╭━━━➤ 『 BOT STATUS 』\n"
+        f"┣• {LANG['ALIVE1']}\n"
+        f"┣• {LANG['OK']}\n"
+        "╰━━━━━━━━━━━━━━━━━━━\n\n"
+        f"╭━━━➤ 『 {LANG['INFO']} 』\n"
+        f"┣• 👤 {LANG['NAME']}: {LUNA_USER}\n"
+        f"┣• ⚙️ {LANG['PYTHON']}: `{python_version()}`\n"
+        f"┣• 🛠️ {LANG['VERSION']}: `{LUNA_VERSION}`\n"
+        f"┣• 📚 {LANG['PLUGIN_COUNT']}: `{len(CMD_HELP)}`\n"
+        "╰━━━━━━━━━━━━━━━━━━━\n\n"
+        "#LunaUserbot"
+    )
+    await event.client.send_file(event.chat_id, img, caption=caption)
+    await event.delete()
+
+@register(outgoing=True, pattern="^.alive$")
+async def amialive(e):
+    me = await e.client.get_me()
+    if type(PLUGIN_MESAJLAR['alive']) == str:
+        await e.edit(PLUGIN_MESAJLAR['alive'].format(
+            telethon=version.__version__,
+            python=python_version(),
+            luna=LUNA_VERSION,
+            plugin=len(CMD_HELP),
+            id=me.id,
+            username='@' + me.username if me.username else f'[{me.first_name}](tg://user?id={me.id})',
+            first_name=me.first_name,
+            last_name=me.last_name if me.last_name else '',
+            mention=f'[{me.first_name}](tg://user?id={me.id})'
+        ))
+    else:
+        await e.delete()
+        if not PLUGIN_MESAJLAR['alive'].text == '':
+            PLUGIN_MESAJLAR['alive'].text = PLUGIN_MESAJLAR['alive'].text.format(
+                telethon=version.__version__,
+                python=python_version(),
+                luna=LUNA_VERSION,
+                plugin=len(CMD_HELP),
+                id=me.id,
+                username='@' + me.username if me.username else f'[{me.first_name}](tg://user?id={me.id})',
+                first_name=me.first_name,
+                last_name=me.last_name if me.last_name else '',
+                mention=f'[{me.first_name}](tg://user?id={me.id})'
+            )
+        if e.is_reply:
+            await e.respond(PLUGIN_MESAJLAR['alive'], reply_to=e.message.reply_to_msg_id)
+        else:
+            await e.respond(PLUGIN_MESAJLAR['alive'])
 
 
 CmdHelp('system_stats').add_command(
@@ -129,4 +181,6 @@ CmdHelp('system_stats').add_command(
     'botver', None, (LANG['SS2'])
 ).add_command(
     'pip', (LANG['SS3']), (LANG['SS4'])
+).add_command(
+    'alive', None, (LANG['SS5'])
 ).add()
