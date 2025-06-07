@@ -48,7 +48,7 @@ async def degistir(event):
             else:
                 await event.edit(f"{LANG['ERROR_DELETED']}: `{silme}`")
         else:
-            await event.edit(LANG['NOT_FOUND'] + ":`afk/alive/pm/kickme/dızcı/ban/mute/approve/disapprove/block/restart`")
+            await event.edit(LANG['NOT_FOUND'] + ":`afk/alive/malive/pm/kickme/dızcı/ban/mute/approve/disapprove/block/restart`")
     elif len(plugin) < 1:
         await event.edit(LANG['USAGE'])
     elif type(mesaj) == str:
