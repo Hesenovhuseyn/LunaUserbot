@@ -123,7 +123,7 @@ async def pipcheck(pip):
 
 @register(outgoing=True, pattern="^.malive$")
 async def malive(event):
-    img = "https://files.catbox.moe/dnny3y.mp4"  
+    img = PLUGIN_MESAJLAR['malive']  
     caption = (
         "╭━━━➤ 『 BOT STATUS 』\n"
         f"┣• {LANG['ALIVE1']}\n"
