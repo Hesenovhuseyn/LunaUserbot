@@ -61,7 +61,7 @@ async def degistir(event):
                 sql.ekle_mesaj(plugin, mesaj)
                 await event.edit(LANG['SETTED'].format(plu=plugin, msj=mesaj))
         else:
-            await event.edit(LANG['NOT_FOUND'] + ":`afk/alive/pm/kickme/dızcı/ban/mute/approve/disapprove/block/restart`")
+            await event.edit(LANG['NOT_FOUND'] + ":`afk/alive/malive/pm/kickme/dızcı/ban/mute/approve/disapprove/block/restart`")
 
 CmdHelp('deyisdir').add_command(
     'deyisdir', (LANG['DY1']), (LANG['DY2']), (LANG['DY3'])
